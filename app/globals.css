@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-eco-darker text-white;
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-eco-green via-eco-teal to-eco-cyan bg-clip-text text-transparent;
+  }
+  
+  .section-full {
+    @apply min-h-screen w-full;
+  }
+  
+  .glow-green {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  }
+  
+  .glow-teal {
+    box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+  }
+}
