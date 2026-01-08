@@ -30,10 +30,27 @@ export default function HeroSection() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-32 md:pt-40">
-        <motion.h1
+        {/* Logo */}
+        <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           animate={inView ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="mb-8 flex justify-center"
+        >
+          <Image
+            src="/ecosort.png"
+            alt="Ecosort Logo"
+            width={200}
+            height={200}
+            className="w-32 h-32 md:w-48 md:h-48 object-contain"
+            priority
+          />
+        </motion.div>
+
+        <motion.h1
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={inView ? { scale: 1, opacity: 1 } : {}}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           className="text-9xl md:text-[12rem] font-display font-bold mb-6 text-gradient leading-none"
         >
           ECOSORT

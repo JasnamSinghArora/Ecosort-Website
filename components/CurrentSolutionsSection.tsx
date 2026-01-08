@@ -56,17 +56,11 @@ export default function CurrentSolutionsSection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-        <motion.div
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12">
           <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-4xl mx-auto leading-relaxed">
             Current waste management systems are failing. The cost of inaction is environmental devastation and human suffering.
           </p>
-        </motion.div>
+        </div>
 
         <motion.h2
           initial={{ y: 50, opacity: 0 }}
