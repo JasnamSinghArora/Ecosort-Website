@@ -115,18 +115,20 @@ export default function AboutPage() {
             className="mt-20"
           >
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-eco-green mb-8 text-center">Our Story</h2>
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-eco-teal/30 bg-eco-gray/30">
-                <video
-                  src="/conrad.mp4"
-                  controls
-                  className="w-full h-full object-contain"
-                  preload="metadata"
-                >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
+  <h2 className="text-4xl font-bold text-eco-green mb-8 text-center">
+    Our Story
+  </h2>
+
+  <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-eco-teal/30 bg-eco-gray/30">
+    <iframe
+      src="https://www.youtube.com/embed/yWj-Agrsjys"
+      title="Ecosort Story"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      className="w-full h-full"
+    />
+  </div>
+</div>
           </motion.div>
         </div>
       </section>
