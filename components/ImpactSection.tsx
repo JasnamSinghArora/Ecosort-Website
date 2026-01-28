@@ -41,8 +41,8 @@ export default function ImpactSection() {
 
   const metrics = [
     { value: 10, suffix: ' kg/day', label: 'Waste Segregated', color: 'eco-green' },
-    { value: 4.1, suffix: ' kg CO₂', label: 'Emissions Avoided', color: 'eco-teal', decimals: 1 },
-    { value: 9.02, suffix: ' kWh', label: 'Energy Recovered', color: 'eco-cyan', decimals: 2 },
+    { value: 4.1, suffix: ' kg CO₂/day', label: 'Emissions Avoided', color: 'eco-teal', decimals: 1 },
+    { value: 9.02, suffix: ' kWh/day', label: 'Energy Recovered', color: 'eco-cyan', decimals: 2 },
   ]
 
   return (
